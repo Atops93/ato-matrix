@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Atops dungeon</title>
+		<title>Matrix digital rain</title>
 		<meta charset="utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" /></meta>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /></meta>
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
 		<style>
 			@supports (padding-top: env(safe-area-inset-top)) {
@@ -85,9 +87,34 @@
 				border-color: crimson;
 				color: white;
 			}
+
+			.info-container {
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  text-align: center;
+			  min-width: 100vw;
+			  max-width: 100vw;
+			  min-height: 100vh;
+			  max-height: 100vh;
+			  overflow: hidden;
+			  position: fixed;
+			  z-index: 1;
+			}
+
+			.info-container__pfp {
+			  width: 250px;
+			  height: 250px;
+			  border: 5px solid white;
+			  border-radius: 50%;
+			}
 		</style>
 	</head>
 	<body>
+		<div class="info-container">
+			<img src="https://media.discordapp.net/attachments/1223830883044429935/1272570723193327649/Sir-Atops.jpg?ex=66bb7557&is=66ba23d7&hm=1ec3ff2a329e9cf2273e44184ba3861a33509ec9bf0d4761051522c483082a2a&=&format=webp" alt="Img" class="info-container__pfp"/> 
+		</div>
 		<script type="module" src="js/main.js"></script>
 	</body>
 </html>
