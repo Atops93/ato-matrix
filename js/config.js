@@ -546,7 +546,7 @@ export default (urlParams) => {
 		}
 	}
 
-	const version = validParams.version in versions ? versions[validParams.version] : versions["3d"];
+	const version = validParams.version in versions ? versions[validParams.version] : Math.floor(Math.random() * (Object.keys(versions).length - 1));
 	const fontName = [validParams.font, version.font, defaults.font].find((name) => name in fonts);
 	const font = fonts[fontName];
 
